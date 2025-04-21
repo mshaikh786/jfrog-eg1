@@ -35,3 +35,6 @@ jobs:
           jf rt build-add-git
           # Publish build info
           jf rt build-publish
+          
+       - name: Scan Build with Xray
+         run: jf bs --vuln --fail=false
